@@ -33,6 +33,20 @@ The game should:
 - Provide clear visual feedback when the player loses.
 - Allow important gameplay values to be easily tuned during playtesting.
 
+## Project Structure
+
+Keep the project organized using the following directory structure:
+
+- `scenes/` — All Godot scene files (`.tscn`) should be stored here.
+- `assets/` — All game assets should be stored here, including images,
+  sprites, sound effects, music, and fonts.
+- `scripts/` — All GDScript files (`.gd`) should be stored here.
+
+Do not place scenes, assets, or scripts in the project root unless there
+is a specific reason to do so.
+
+The `project.godot` file should remain in the project root.
+
 ## Technical Requirements
 
 - Use Godot 4.x.
@@ -54,6 +68,8 @@ The project will likely contain scenes representing:
 - Player spaceship
 - Asteroid
 - Game-over / UI elements
+
+All scene files should be stored in the `scenes/` directory.
 
 Do not create additional systems or scenes unless they provide a clear
 benefit to the game.
@@ -116,6 +132,7 @@ When making changes:
 6. Expose gameplay values in the Inspector when they are likely to need
    playtesting and tuning.
 7. Do not add features that were not requested.
+8. Follow the project's directory structure when creating new files.
 
 ## Working With This Project
 
